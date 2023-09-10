@@ -13,4 +13,4 @@ class Solution(object):
 p =  Solution()
 list1 = [35, 0, 31, 11, 26]
 list2 = [3, 2, 5, 7, 12, 35]
-p.mergeTwoLists(list1, list2)
+# p.mergeTwoLists(list1, list2)
