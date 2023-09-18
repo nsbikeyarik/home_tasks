@@ -13,7 +13,7 @@ class Solution(object):
 
 
 p = Solution()
-numRows = 5
+numRows = 4
 print(p.generate(numRows))
 
 
