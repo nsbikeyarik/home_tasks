@@ -1,11 +1,21 @@
 class Solution(object):
     def generate(self, numRows):
-        numRows = int
-        output = List[int]
-        if numRows == 0:
-            return []
-        if numRows == 1:
-            return [[1]]
+        result= [[1]]
+        for i in range(numRows-1):
+            temp = [0] + result[-1] + [0]
+            row = []
+            for j in range(len(result[-1]) + 1):
+                row.append(temp[j]+ temp[j +1])
+            result.append(row)
+        return result
+
+
+
+
+p = Solution()
+numRows = 4
+print(p.generate(numRows))
+
 
 
 
